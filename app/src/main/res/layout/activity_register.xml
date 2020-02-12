@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/arrow_left_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_simple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="General Info"
+        android:textColor="#000"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_editor_absoluteX="320dp"
+        app:layout_editor_absoluteY="55dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="#E22020"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Of 5"
+        android:textSize="20dp"
+        android:textColor="#000"
+        tools:layout_editor_absoluteX="331dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="605dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="122dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fulln name"
+            android:layout_marginTop="22dp"
+            android:textSize="19dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/futura_pt_demibold"
+            android:text="Jonathan Doe"
+            android:textColor="#000"
+            android:textSize="19dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_line_padded" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Email Address"
+            android:textColor="#000" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Mobile Number"
+            android:textColor="#000" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Cauntry"
+            android:textColor="#000" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Password"
+            android:textColor="#000" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Confirm Password"
+            android:textColor="#000" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Referal Code (Optimal)"
+            android:textColor="#000" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:fontFamily="@font/futura_pt_demibold"
+            android:textSize="20dp"
+            android:background="@drawable/btn_red_large"/>
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="47dp"
+        android:layout_marginTop="365dp"
+        android:background="@drawable/caret_down"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
