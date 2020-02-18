@@ -5,14 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfilActivity">
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
+        android:onClick="Profile"
         android:background="@drawable/arrow_left_black"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginLeft="20dp"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
