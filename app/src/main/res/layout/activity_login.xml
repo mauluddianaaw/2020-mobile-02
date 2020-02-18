@@ -6,24 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="618dp"
-        android:layout_height="400dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
         app:srcCompat="@drawable/red_rectangle" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@id/imageView"
@@ -58,7 +62,7 @@
         android:text="Service Provider"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintHorizontal_bias="0.271"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -71,64 +75,83 @@
         android:text="Login"
         android:textColor="#E22020"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:layout_editor_absoluteX="66dp" />
+        android:layout_marginLeft="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="188dp"
+        android:layout_width="150dp"
         android:layout_height="39dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/btn_red_medium"
         android:text="Register"
         android:textColor="#ffffff"
         android:textStyle="bold"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:layout_editor_absoluteX="179dp" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="297dp"
-        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
         android:layout_marginTop="24dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
         android:background="@drawable/btn_white_small"
         android:text="Continue with Google"
         android:textColor="#E22020"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        tools:layout_editor_absoluteX="70dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="14dp"
         android:background="@drawable/google_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/button5"
         app:layout_constraintStart_toStartOf="@+id/button5"
+        app:layout_constraintTop_toTopOf="@+id/button5"
         app:layout_editor_absoluteX="41dp"
-        app:layout_editor_absoluteY="187dp"
-        tools:layout_editor_absoluteY="572dp" />
+        app:layout_editor_absoluteY="187dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/fb_logo"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="@+id/button6"
+        app:layout_constraintTop_toTopOf="@+id/button6"
+        app:layout_constraintVertical_bias="1.0"
         app:layout_editor_absoluteX="41dp"
-        app:layout_editor_absoluteY="187dp"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="636dp" />
+        app:layout_editor_absoluteY="187dp" />
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="297dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="50dp"
         android:background="@drawable/btn_blue_large"
         android:text="Continue with Facebook"
         android:textColor="#1857CC"
-        app:layout_constraintTop_toBottomOf="@+id/button5"
-        tools:layout_editor_absoluteX="70dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
 
     <TextView
         android:id="@+id/textView4"
